@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(65, 41, 41);
+    color: white;
+}
+
+.container {
+    padding: 3% 4%;
+    margin: 2%;
+    background-color: rgb(34, 24, 24);
+    width: auto;
+    height: auto;
+}
+
+.container .title {
+    color: lightblue;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.container .todoLists {
+    padding: 2%;
+}
+
+.todoGrid {
+    border: 3px solid #eee;
+    padding: 20px 0;
+}
+
+.todoLists .todo-item {
+    display: grid;
+    grid-template-columns: 50% 30% 10% 10%;
+    grid-row-gap: 20px;
+}
+
+.todoLists div .delete-button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todoLists div .edit-button {
+    background-color: rgb(10, 10, 122);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todoLists div .save-button {
+    background-color: lightgreen;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todoLists .todo-item .names {
+    font-size: 18px;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+
+.todoLists .todo-item .dueDates {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 0px;
+}
+
+.container .todoLists .nameInput {
+    line-height: 30px;
+    width: 40%;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.nameInput::placeholder {
+    font-size: 18px;
+}
+
+.dateInput {
+    line-height: 30px;
+    width: 25%;
+    padding: 4px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+
+.addBtn {
+    line-height: 30px;
+    width: 15%;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
